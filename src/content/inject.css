@@ -1,0 +1,14 @@
+:root {
+  --gme-tile-min: 160px;
+  --gme-gap: 4px;
+}
+
+#gme-grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--gme-tile-min), 1fr));
+  gap: var(--gme-gap);
+  pointer-events: none;
+  z-index: 9999;
+} 
